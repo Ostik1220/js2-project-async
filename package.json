@@ -1,0 +1,21 @@
+{
+  "name": "js2-project-async",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://ostik1220.github.io/js2-project-async/",
+  "scripts": {
+    "start": "npx parcel src/index.html",
+    "build": "parcel build src/index.html --no-cache --public-url /js2-project-async",
+        "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
