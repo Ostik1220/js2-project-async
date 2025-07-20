@@ -7,7 +7,8 @@
     "start": "npx parcel src/index.html",
     "build": "parcel build src/index.html --no-cache --public-url /js2-project-async",
     "deploy": "gh-pages -d dist",
-    "predeploy": "npm run build"
+    "predeploy": "npm run build",
+    "server": "npx json-server posts.json"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,8 @@
     "parcel-reporter-clean-dist": "^1.0.4"
   },
   "dependencies": {
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "handlebars": "^4.7.8",
+    "json-server": "^1.0.0-beta.3"
   }
 }
