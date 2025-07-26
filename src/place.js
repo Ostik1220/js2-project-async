@@ -2,6 +2,7 @@ import { deletePostApi } from "./operations/deletePostApi";
 import { getPosts } from "./operations/getPostsApi";
 import { postPostApi } from "./operations/postPostApi";
 import { updatePostApi } from "./operations/updatePostApi";
+import { getSinglePost } from "./operations/getSinglePostApi";
 let loaded = false;
 
 
@@ -70,8 +71,22 @@ event.preventDefault()
 closeColectModal()
 
 
-document.querySelector(".createCommentForm").addEventListener("submit", (e) => {
-  e.preventDefault
-  const commentText = e.target.elements.commentCollect.value;
-  console.log(commentText)
-})
+
+
+document.addEventListener("submit", async (e) => {
+  if (e.target.matches(".createCommentForm")) {
+    e.preventDefault();
+
+    const commentText = e.target.elements[0].value;
+    console.log(commentText);
+    const id = e.target.parentElement.parentElement.id;
+    console.log(id);
+    
+    const post = await getSinglePost(id);
+    const updatedComments = [...post.comments, commentText];
+
+    updatePostApi(id, {
+      comments: updatedComments
+    });
+  }
+});

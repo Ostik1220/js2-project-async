@@ -1,10 +1,13 @@
 {
   "posts": [
     {
-      "title": "Nature",
-      "text": "ocaen",
       "id": "1",
-      "comments": []
+      "title": "Nature",
+      "text": "I like forest",
+      "comments": [
+        "1212",
+        "11"
+      ]
     },
     {
       "id": "1eeb",
@@ -13,10 +16,98 @@
       "comments": []
     },
     {
-      "id": "7ce7",
-      "title": "wed",
-      "text": "cw",
+      "id": "2a3f",
+      "title": "Mountains",
+      "text": "high and cold",
+      "comments": [
+        "as"
+      ]
+    },
+    {
+      "id": "3bd2",
+      "title": "Coding",
+      "text": "JavaScript is fun",
       "comments": []
+    },
+    {
+      "id": "4c1a",
+      "title": "Weather",
+      "text": "Сьогодні сонячно",
+      "comments": []
+    },
+    {
+      "id": "5d4f",
+      "title": "Food",
+      "text": "Pizza is the best",
+      "comments": []
+    },
+    {
+      "id": "6eef",
+      "title": "Travel",
+      "text": "I want to visit Japan",
+      "comments": []
+    },
+    {
+      "id": "7abc",
+      "title": "Sleep",
+      "text": "Немає нічого кращого ніж поспати",
+      "comments": []
+    },
+    {
+      "id": "8xyz",
+      "title": "Books",
+      "text": "Reading makes me calm",
+      "comments": []
+    },
+    {
+      "id": "9ff9",
+      "title": "Music",
+      "text": "Я слухаю рок",
+      "comments": []
+    },
+    {
+      "id": "10aa",
+      "title": "Sunset",
+      "text": "Beautiful orange sky",
+      "comments": []
+    },
+    {
+      "id": "11bb",
+      "title": "Friends",
+      "text": "Spending time together",
+      "comments": []
+    },
+    {
+      "id": "12cc",
+      "title": "Dream",
+      "text": "Мрію побувати у США",
+      "comments": []
+    },
+    {
+      "id": "13dd",
+      "title": "Cat",
+      "text": "Мій кіт сьогодні смішний",
+      "comments": []
+    },
+    {
+      "id": "14ee",
+      "title": "Coffee",
+      "text": "Need coffee to survive",
+      "comments": []
+    },
+    {
+      "id": "15ff",
+      "title": "Work",
+      "text": "Frontend – це не просто",
+      "comments": []
+    },
+    {
+      "id": "16gg",
+      "title": "Poland",
+      "text": "Живу зараз у Польщі",
+      "comments": [
+        "Новий коментар"
+      ]
     }
   ]
 }

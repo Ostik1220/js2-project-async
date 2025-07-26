@@ -1,6 +1,6 @@
 export const updatePostApi = async (id, post) => {
   const options = {
-    method: "PUT",
+    method: "PATCH",
     body: JSON.stringify(post),
     headers: {
       "Content-Type": "application/json; charset=UTF-8",

@@ -12,6 +12,8 @@
   margin-top: 30px;
   gap: 24px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #createPostForm{
@@ -24,8 +26,8 @@
 
 .post{
     background-color: #5EC4CD;
-    min-width: 300px;
-    min-height: 300px;
+    min-width: 319px;
+    min-height: 310px;
     padding: 10px;
 }
 
