@@ -2,16 +2,27 @@
 <html>
 <head>
 <title>Блог</title>
+<link rel="stylesheet" href="style/style.css">
 </head>
 <body>
 <h1>Блог</h1>
 <form id="createPostForm">
-<input type="text" id="titleInput" placeholder="Заголовок" required>
-<textarea id="contentInput" placeholder="Зміст" required></textarea>
+<input type="text" id="titleInput" placeholder="Заголовок" required name="nameCollect">
+<textarea id="contentInput" placeholder="Зміст" name="discriptionCollect" required></textarea>
 <button type="submit">Створити пост</button>
 </form>
 <button id="load">загрузити</button>
 <div id="postsContainer"></div>
+<div class="edit-backdrop">
+        <div class="edit-modal">
+            <h2 class="edit-title">Що ви хочете замінити?</h2>
+            <form action="" class="form-edit">
+            <input type="text" id="titleInput" placeholder="Заголовок" required name="nameEditCollect">
+<textarea id="contentInput" placeholder="Зміст" name="discriptionEditCollect" required></textarea>
+<button type="submit">Змінити пост</button>
+</form>
+        </div>
+    </div>
 <script type="module" src="./place.js"></script>
 </body>
 </html>

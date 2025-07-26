@@ -1,11 +1,19 @@
 {
   "posts": [
     {
-      "id": "1",
       "title": "Nature",
-      "text": "я люблю природу"
-    }, {
-            "id": "2",
-      "title": "ice-cream",
-      "text": "я люблю морозиво"
-    }]}
+      "text": "forest",
+      "id": "1"
+    },
+    {
+      "id": "1eeb",
+      "title": "Ostap",
+      "text": "я люблю банани"
+    },
+    {
+      "id": "915a",
+      "title": "Ostap Drymalyk",
+      "text": "12123"
+    }
+  ]
+}

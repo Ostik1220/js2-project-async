@@ -1,3 +1,35 @@
+html{
+    background-color: #FF7800;
+}
+
 .post{
-    background-color: blue;
+    background-color: #5EC4CD;
+}
+
+.hero-backdrop, .edit-backdrop {
+  background-color: rgba(0, 0, 0, 0.402);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  visibility: hidden;
+  display: none;
+}
+
+.edit-modal{
+    background-color: #5EC4CD;
+      width: 500px;
+  height: 400px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
 }
