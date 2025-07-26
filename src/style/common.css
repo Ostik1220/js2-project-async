@@ -1,0 +1,29 @@
+html{
+    background-color: #FF7800;
+    font-family: "Lora";
+}
+
+button{
+  color: #28575b;
+  border: none;
+  border-radius: 20px;
+  min-width: 100px;
+  min-height: 20px;
+  font-family: "Lora";
+  background-color: #ffdec2;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+ul{
+  list-style: none;
+}
+
+h1, h2, h3,  p{
+  color: #28575b;
+}

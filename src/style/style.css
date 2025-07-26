@@ -1,9 +1,32 @@
-html{
-    background-color: #FF7800;
+
+.hero{
+  background-color: #5EC4CD;
+  display: flex;
+    justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+}
+
+#postsContainer{
+  margin-top: 30px;
+  gap: 24px;
+  display: flex;
+}
+
+#createPostForm{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 400px;
+  margin-bottom: 24px;
 }
 
 .post{
     background-color: #5EC4CD;
+    min-width: 300px;
+    min-height: 300px;
+    padding: 10px;
 }
 
 .hero-backdrop, .edit-backdrop {

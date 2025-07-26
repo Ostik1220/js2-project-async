@@ -2,7 +2,7 @@ import { deletePostApi } from "./operations/deletePostApi";
 import { getPosts } from "./operations/getPostsApi";
 import { postPostApi } from "./operations/postPostApi";
 import { updatePostApi } from "./operations/updatePostApi";
-
+let loaded = false;
 
 
 document.querySelector("#load").addEventListener("click", async () => {
@@ -15,6 +15,7 @@ document.querySelector("#postsContainer").addEventListener("click", async (event
     console.log(item.id);
     await deletePostApi(item.id);
     await getPosts()
+    loaded = true
   }
 console.log(event.target.parentElement)
 });
@@ -27,9 +28,11 @@ e.preventDefault()
         const postBlock = {
       title: name,
       text: discription,
+      comments: []
     }; 
     await postPostApi(postBlock);
         await getPosts()
+        loaded = true
 })
 
 const openModal = () => {
@@ -37,6 +40,15 @@ document.querySelector(`.edit-backdrop`).style.visibility = "visible"
 document.querySelector(`.edit-backdrop`).style.display = "flex"
 }
 
+
+let item = "";
+
+document.querySelector("#postsContainer").addEventListener("click", async (event) => {
+  if (event.target.textContent === "Редагувати") {
+    openModal()
+        item = event.target.parentElement
+}
+});
 
 const closeColectModal = () => {
     document.querySelector(".form-edit").addEventListener("submit", async (event) => {
@@ -46,22 +58,20 @@ event.preventDefault()
         const postBlock = {
       title: name,
       text: discription,
+      comments:[]
     }; 
     document.querySelector(`.edit-backdrop`).style.visibility = "hidden"
     document.querySelector(`.edit-backdrop`).style.display = "none"
-return postBlock
+        await updatePostApi(item.id, postBlock)
+        await getPosts()
 })
 }
 
+closeColectModal()
 
 
-document.querySelector("#postsContainer").addEventListener("click", async (event) => {
-  if (event.target.textContent === "Редагувати") {
-    openModal()
-        const item = event.target.parentElement
-        console.log(event.target.parentElement)
-        closeColectModal()
-        await updatePostApi(item.id, postBlock)
-        await getPosts()
-}
-});
+document.querySelector(".createCommentForm").addEventListener("submit", (e) => {
+  e.preventDefault
+  const commentText = e.target.elements.commentCollect.value;
+  console.log(commentText)
+})

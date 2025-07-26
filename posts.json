@@ -2,18 +2,21 @@
   "posts": [
     {
       "title": "Nature",
-      "text": "forest",
-      "id": "1"
+      "text": "ocaen",
+      "id": "1",
+      "comments": []
     },
     {
       "id": "1eeb",
       "title": "Ostap",
-      "text": "я люблю банани"
+      "text": "я люблю банани",
+      "comments": []
     },
     {
-      "id": "915a",
-      "title": "Ostap Drymalyk",
-      "text": "12123"
+      "id": "7ce7",
+      "title": "wed",
+      "text": "cw",
+      "comments": []
     }
   ]
 }
