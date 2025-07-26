@@ -1,11 +1,22 @@
-<!DOCTYPE html><title>Блог</title><body>
+<!DOCTYPE html><title>Блог</title><link rel=stylesheet href=/js2-project-async/js2-project-async.c93cabef.css><body>
 <h1>Блог</h1>
 <form id=createPostForm>
-<input id=titleInput placeholder=Заголовок required>
-<textarea id=contentInput placeholder=Зміст required></textarea>
+<input id=titleInput placeholder=Заголовок required name=nameCollect>
+<textarea id=contentInput placeholder=Зміст name=discriptionCollect required></textarea>
 <button>Створити пост</button>
 </form>
 <button id=load>загрузити</button>
 <div id=postsContainer></div>
-<script type=module src=/js2-project-async/js2-project-async.223f49f0.js></script>
+<div class=edit-backdrop>
+        <div class=edit-modal>
+            <h2 class=edit-title>Що ви хочете замінити?</h2>
+            <form class=form-edit>
+            <input id=titleInput placeholder=Заголовок required name=nameEditCollect>
+<textarea id=contentInput placeholder=Зміст name=discriptionEditCollect required></textarea>
+<button>Змінити пост</button>
+</form>
+        </div>
+    </div>
+<script type=module src=/js2-project-async/js2-project-async.ce76ca3e.js></script>
+
 
