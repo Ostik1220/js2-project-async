@@ -1,6 +1,6 @@
 export const updatePostApi = async (id, post) => {
   const options = {
-    method: "PATCH",
+    method: "PUT",
     body: JSON.stringify(post),
     headers: {
       "Content-Type": "application/json; charset=UTF-8",
@@ -8,7 +8,7 @@ export const updatePostApi = async (id, post) => {
   };
     try {
     return await fetch(
-      `http://localhost:3000/posts/${id}`,
+      `https://687bab4eb4bc7cfbda86bede.mockapi.io/posts/${id}`,
       options
     ).then((response) => response.json());
   } catch (error) {

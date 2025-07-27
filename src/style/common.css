@@ -1,10 +1,10 @@
 html{
-    background-color: #FF7800;
+    background-color: goldenrod;
     font-family: "Lora";
 }
 
 button{
-  color: #28575b;
+  color: gray;
   border: none;
   border-radius: 20px;
   min-width: 100px;
@@ -21,9 +21,9 @@ body{
 }
 
 ul{
-  list-style: none;
+  list-style: decimal;
 }
 
-h1, h2, h3,  p{
-  color: #28575b;
+h1, h2, h3,  p, li{
+  color: goldenrod;
 }

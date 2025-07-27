@@ -5,30 +5,33 @@
       "title": "Nature",
       "text": "I like forest",
       "comments": [
-        "1212",
-        "11",
-        "23"
+        "і ще я люблю океани"
       ]
     },
     {
       "id": "1eeb",
       "title": "Ostap",
       "text": "я люблю банани",
-      "comments": []
+      "comments": [
+        "і яблука"
+      ]
     },
     {
       "id": "2a3f",
       "title": "Mountains",
       "text": "high and cold",
       "comments": [
-        "as"
+        "as",
+        "twelve"
       ]
     },
     {
       "id": "3bd2",
       "title": "Coding",
       "text": "JavaScript is fun",
-      "comments": []
+      "comments": [
+        "also html"
+      ]
     },
     {
       "id": "4c1a",
@@ -88,13 +91,18 @@
       "id": "13dd",
       "title": "Cat",
       "text": "Мій кіт сьогодні смішний",
-      "comments": []
+      "comments": [
+        "і милий",
+        "люблю свого кота"
+      ]
     },
     {
       "id": "14ee",
       "title": "Coffee",
       "text": "Need coffee to survive",
-      "comments": []
+      "comments": [
+        "no im not"
+      ]
     },
     {
       "id": "15ff",

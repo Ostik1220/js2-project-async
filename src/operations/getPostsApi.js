@@ -1,5 +1,5 @@
-export const getPosts = async() => {
- try{ return await fetch("http://localhost:3000/posts")
+export const getPosts = async(postsOnPage) => {
+ try{ return await fetch(`https://687bab4eb4bc7cfbda86bede.mockapi.io/posts?page=1&limit=${postsOnPage}`)
     .then((res) => res.json())
     .then((data) => {
       const postsBody = document.querySelector("#postsContainer");
@@ -15,7 +15,7 @@ export const getPosts = async() => {
 function renderPosts(posts) {
   return posts.map((object) => {
     const commentsHTML = (object.comments || [])
-      .map((comment) => `<li>${comment}</li>`)
+      .map((comment) => `<li class="comment">${comment}</li>`)
       .join("");
 
     return `

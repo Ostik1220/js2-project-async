@@ -1,6 +1,6 @@
 export const deletePostApi = async (id) => {
   try {
-  return await fetch(`http://localhost:3000/posts/${id}`, {
+  return await fetch(`https://687bab4eb4bc7cfbda86bede.mockapi.io/posts/${id}`, {
     method: "DELETE",
   });
   } catch (error) {
