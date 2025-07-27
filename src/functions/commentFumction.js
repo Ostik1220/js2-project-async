@@ -1,6 +1,7 @@
 import { getSinglePost } from "../operations/getSinglePostApi";
 import { updatePostApi } from "../operations/updatePostApi";
 import { getPosts } from "../operations/getPostsApi";
+import { postsLoaded } from "./loadMore";
 
 
 export const commentFunction = () => {
@@ -23,7 +24,7 @@ export const commentFunction = () => {
       comments: updatedComments
     });
     e.target.elements[0].value = "";
-    await getPosts(4)
+    await getPosts(postsLoaded)
   }
   
 });

@@ -3,6 +3,13 @@ html{
     font-family: "Lora";
 }
 
+input, textarea{
+  border: none;
+  background-color: goldenrod;
+  color:gray;
+  border-radius: 5px;
+}
+
 button{
   color: gray;
   border: none;
@@ -26,4 +33,8 @@ ul{
 
 h1, h2, h3,  p, li{
   color: goldenrod;
+}
+
+h1{
+  font-size: 86px;
 }

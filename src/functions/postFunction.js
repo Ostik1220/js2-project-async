@@ -1,5 +1,8 @@
 import { getPosts } from "../operations/getPostsApi";
 import { postPostApi } from "../operations/postPostApi";
+import { postsLoaded } from "./loadMore";
+import { checkPosts } from "./postsCheck";
+
 
 export const form = () => { 
 document.querySelector("#createPostForm").addEventListener("submit", async (e) => {
@@ -14,7 +17,8 @@ e.preventDefault()
     await postPostApi(postBlock);
     e.target.elements.discriptionCollect.value = ""
     e.target.elements.nameCollect.value = ""
-        await getPosts(4)
+        await getPosts(postsLoaded)
+        await checkPosts
     
 })
 }

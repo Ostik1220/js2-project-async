@@ -6,16 +6,10 @@ import { delet } from "./functions/deleteFunction";
 import { closeColectModal } from "./functions/updateFunction";
 import { form } from "./functions/postFunction";
 
+getPosts(4); 
 
 
-document.querySelector("#load").addEventListener("click", async () => {
-return await getPosts(4); 
-})
-
-
-
-let item = "";
-
+export let item = "";
 document.querySelector("#postsContainer").addEventListener("click", async (event) => {
   if (event.target.textContent === "Редагувати") {
     openModal()
@@ -24,14 +18,11 @@ document.querySelector("#postsContainer").addEventListener("click", async (event
 });
 
 
-
 closeColectModal()
-
 delet()
-
 commentFunction()
-
 form()
-
 loadMore()
 
+const postCont = document.querySelector("#postsContainer")
+console.log(postCont)
